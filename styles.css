@@ -1,0 +1,249 @@
+body{
+    width:100%;
+    /* height:100vh; */
+    margin:0px;
+    display: flex;
+    flex-direction: row;
+}
+.div-one{
+    width:50%;
+    height: 100vh;
+    /* border-style: solid; */
+    /* border-width: 0px 2px 0px 0px; */
+    /* border-right-color: black; */
+}
+.cssbg{
+    width:50%;
+    height: 90%;
+    background:linear-gradient(45deg,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    /* border-bottom-left-radius: ; */
+    /* border-bottom-right-radius: 50%; */
+    border-bottom-left-radius: 65vw;
+    border-bottom-right-radius: 90vw;
+}
+.mobile{
+    width:65%;
+    height:85%;
+    border-radius: 20px;
+    background-color: hsl(270, 20%, 96%);
+    position: relative;
+    /* left: 10px; */
+    right:-250px;
+    top:70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border:9px white solid;
+}
+.speaker{
+    height:14px;
+    width:100px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
+    left:37px;
+
+}
+.head{
+    /* background-color: blue; */
+    background:linear-gradient(to right,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    height:15%;
+    border-radius: 10px 10px 10px 10px;
+    
+    padding: 0px 9px;
+}
+.head-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+.head-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.p{
+    font-size: 12px;
+    width: 100%;
+    font-weight: 600;
+    color: white;
+    margin-left: 4px;
+}
+.po{
+    font-size: 10px;
+    margin-left: 4px;
+    color: white;
+}
+.avatar{
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    border:1px white solid;
+    margin-left: 2px;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+.chatbox{
+    height:80%;
+    /* overflow: hidden; */
+    padding:0px 10px;
+}
+.get{
+    background-color: hsl(277, 39%, 94%);
+    width:60%;
+    box-sizing: border-box;
+    padding:5px;
+    font-size: 6px;
+    color:blueviolet;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 9px 9px 9px 3px
+}
+.sent{
+    text-align: right;
+    background-color: white;
+    width: 75%;
+    font-size: 6px;
+    box-sizing: border-box;
+    border-radius: 9px 9px 3px 9px;
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.sent-2{
+    width:50%;
+}
+.dog{
+    width: 40px;
+    border-radius: 8px;
+}
+.sentchat{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+}
+.radio{
+    background-color: aqua;
+    /* height: 10px; */
+    width: 80%;
+    margin-top:8px;
+    height:30px;
+    border-radius: 9px 9px 9px 3px ;
+    display: flex;
+    flex-direction: row;
+    /* justify-content:space-between; */
+    align-items: center;
+    background:linear-gradient(to left,hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+}
+.walk{
+    font-size: 10px;
+    color:white;
+    /* margin-left: 0px; */
+    font-weight: 100;
+}
+.walkrate{
+    font-size: 12px;
+    margin-left: 15px;
+    color:white;
+    font-weight: 600;
+}
+#wlkrate{
+   margin-left: 29px;
+}
+.msg{
+    background-color: white;
+    width:95%;
+    height:20px;
+    padding:5px;
+    margin-top: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.holder{
+    font-size: 10px;
+}
+
+.div-two{
+    height: 100vh;
+    width: 50%;
+
+}
+.two-inner{
+    position: absolute;
+    z-index:2;
+    top:130px;
+    font-family: 'Open Sans', sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+.booking{
+    color:rgb(45, 26, 62);
+}
+.para{
+    width: 70%;
+    color:rgb(170, 175, 175);
+    font-size: 15px;
+    row-gap: 7px;
+}
+.cssbg-2{
+    background-color: hsl(270, 20%, 96%);
+    height: 85%;
+    width: 40%;
+    position: relative;
+    left:60%;
+    top:15%;
+    border-top-left-radius: 170px;
+    z-index:1;
+    
+}
+
+
+@media only screen and (max-width:375px){
+    /* html,body{
+        width:100%;
+        overflow-x: hidden; remember to use this for all mob layouts 
+    } */
+    body{
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+    }
+    .div-one{
+        width: 100%;
+    }
+    .mobile{
+        position: relative;
+        left: 60px;
+        z-index:3;
+        width: 200px;
+        height: 400px;
+    }
+    .div-two{
+        width: 100%;
+    }
+    .two-inner{
+        position: relative;
+        text-align: center;
+        background-color: transparent;
+    }
+    .para{
+        /* margin-left: 50px; */
+        width: 90%;
+        margin-left: 10px;
+        /* background-color: transparent; */
+    }
+    .cssbg-2{
+        position: relative;
+        top:-300px;
+        width: 50%;
+        left:175px;
+        height:580px;
+    }
+}
